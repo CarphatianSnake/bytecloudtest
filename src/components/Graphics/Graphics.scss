@@ -1,0 +1,13 @@
+.graphics-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+
+  @media (orientation: portrait) {
+    margin-top: 0;
+    align-items:flex-start;
+    flex-direction: row;
+    order: 1;
+  }
+}

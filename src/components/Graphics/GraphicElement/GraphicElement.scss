@@ -1,0 +1,95 @@
+.graphic-element {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  line-height: 1rem;
+
+  @media (orientation: portrait) {
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    gap: .5rem;
+  }
+
+  .name-container {
+    width: 25%;
+
+    @media (orientation: portrait) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 20%;
+      width: 100%;
+      gap: .2rem;
+      order: 3;
+
+      .name {
+        text-align: center;
+        font-size: .85rem;
+      }
+    }
+
+    .options-container {
+      display: flex;
+      justify-content: flex-start;
+      gap: .5rem;
+      cursor: pointer;
+
+      @media (orientation: portrait) {
+        gap: 0;
+        flex-direction: column;
+      }
+
+      .option {
+        display: flex;
+        align-items: center;
+
+        &-marker {
+          width: .5rem;
+          height: .5rem;
+          border: 1px solid #000;
+          border-radius: 50%;
+          margin-right: .25rem;
+        }
+
+        .active {
+          background-color: #000;
+        }
+
+        &-name {
+          font-size: .75rem;
+        }
+      }
+    }
+  }
+
+  .logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: center no-repeat;
+    background-size: contain;
+    
+    @media (orientation: portrait) {
+      width: 1rem;
+      height: 1rem;
+      order: 2;
+    }
+
+    &_backblaze {
+      background-image: url('../../../assets/img/backblaze.svg');
+    }
+
+    &_bunny {
+      background-image: url('../../../assets/img/bunny.svg');
+    }
+
+    &_scaleway {
+      background-image: url('../../../assets/img/scaleway.svg');
+    }
+
+    &_vultr {
+      background-image: url('../../../assets/img/vultr.svg');
+    }
+  }
+}
