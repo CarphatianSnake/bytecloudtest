@@ -41,7 +41,21 @@
     }
 
     &_top {
-      background-color: rgb(202, 61, 202);
+      &__backblaze {
+        background-color: rgb(202, 61, 61);
+      }
+
+      &__bunny {
+        background-color: rgb(228, 114, 61);
+      }
+
+      &__scaleway {
+        background-color: rgb(202, 61, 202);
+      }
+
+      &__vultr {
+        background-color: rgb(69, 219, 230);
+      }
     }
   }
 
