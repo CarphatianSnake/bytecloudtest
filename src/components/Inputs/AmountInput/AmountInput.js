@@ -10,7 +10,7 @@ function AmountInput({ value, onChange }) {
         min="0"
         max="1000"
         step="1"
-        value={value}
+        value={value === "" ? 0 : value}
         onChange={onChange}
       />
       <div className="input-labels">
