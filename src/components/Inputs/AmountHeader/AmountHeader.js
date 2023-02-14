@@ -8,7 +8,7 @@ function AmountHeader({ type, value, onChange }) {
     <div className="value-header-wrapper">
       <h2 className="value-name">{type}:</h2>
       <div className="value-wrapper">
-        <input className={`value-input ${isError()}`} size="1" value={value} onChange={onChange} />
+        <input className={`value-input ${isError()}`} value={value} onChange={onChange} />
         <span>GB</span>
       </div>
     </div>
